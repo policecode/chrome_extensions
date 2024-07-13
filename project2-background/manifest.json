@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Mr Dat Change Background",
+  "version": "1.0",
+  "description": "Description of what your extension does.",
+  "action": {
+    "default_icon": {
+      "32": "images/icon/icons8-shit-48.png"
+    }
+    
+  },
+  "icons": {
+    "16": "images/icon/brainfuck-16.png",
+    "48": "images/icon/brainfuck-48.png",
+    "128": "images/icon/brainfuck-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": ["js/libs/jQuery-3.7.1.js", "js/content.js"],
+      "css": ["css/myStyle.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [{ 
+    "resources": ["images/*"],
+    "matches": ["<all_urls>"]
+  }]
+}
