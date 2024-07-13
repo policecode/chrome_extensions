@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Animation Card",
+    "description": "Build an Extension Animation Card",
+    "web_accessible_resources":[{ 
+        "resources": ["images/*"],
+        "matches": ["<all_urls>"]
+      }],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"], 
+          "css": ["css/bootstrap.min.css", "css/my-styles.css"],
+          "js": ["js/jQuery.js", "js/bootstrap.min.js", "js/LocalStorageHelper.js", "js/contentScript.js"]
+        }
+    ]
+  }

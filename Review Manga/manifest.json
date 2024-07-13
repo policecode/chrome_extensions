@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Đọc truyện tranh",
+    "description": "Build an Extension Review Manga",
+    "web_accessible_resources":[{ 
+        "resources": ["images/*"],
+        "matches": ["<all_urls>"]
+      }],
+    "content_scripts": [
+        {
+          "matches": ["https://truyentranhaudio.com/*"], 
+          "css": ["css/bootstrap.min.css", "css/my-styles.css"],
+          "js": ["js/jQuery.js", "js/bootstrap.min.js", "js/LocalStorageHelper.js", "js/contentScript.js"]
+        }
+    ]
+  }
