@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Mr Dat Todo List",
+  "version": "1.0",
+  "description": "Description of what your extension does.",
+  "action": {
+    "default_title": "Click to view a popup",
+    "default_icon": {
+      "32": "images/icon/icons8-shit-48.png"
+    },
+    "executeScript": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/popup.js"]
+      }
+    ]
+  },
+  "icons": {
+    "16": "images/icon/brainfuck-16.png",
+    "48": "images/icon/brainfuck-48.png",
+    "128": "images/icon/brainfuck-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/libs/jQuery-3.7.1.js", "js/content.js"],
+      "css": ["css/myStyle.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "contextMenus"
+  ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPtion page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+    <script type="text/javascript" src="./js/libs/jQuery-3.7.1.js"></script>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-9">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-primary">Thêm</button>
+          </div>
+        </div>
+      </div>
+      <!-- ====================================== -->
+      <div class="alert alert-primary" role="alert">
+        Các công việc cần thực hiện
+      </div>
+      <!-- ====================================== -->
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>
+              <button type="button" class="btn btn-danger btn-sm">Delete</button>
+
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <!-- ====================================== -->
+      <div class="task__filtter d-flex justify-content-around">
+        <button type="button" class="btn btn-primary">Tất cả</button>
+        <button type="button" class="btn btn-success">Hoàn thành</button>
+        <button type="button" class="btn btn-warning">Đang thực hiện</button>
+      </div>
+    </div>
+    <script src="./js/popup.js"></script>
+  </body>
+</html>
