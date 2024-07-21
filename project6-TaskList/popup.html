@@ -10,50 +10,104 @@
   </head>
   <body>
     <div id="app" class="container">
-      <div class="form-group">
-        <div class="row">
-          <div class="col-9">
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="col-3">
-            <button type="button" class="btn btn-primary">Thêm</button>
+      <nav class="navbar navbar-dark bg-primary mb-4">
+        <ul class="navbar-nav" style="flex-direction: row">
+          <li class="nav-item ml-4 mr-4 active" data-view="view__one">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item ml-4 mr-4" data-view="view__two">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ====================================== -->
+      <div class="app__view view__one">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="text"
+                name="input_add"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="col-3">
+              <button type="button" name="btn_add" class="btn btn-primary">
+                Thêm
+              </button>
+            </div>
           </div>
         </div>
+        <!-- ====================================== -->
+        <div class="alert alert-primary" role="alert">
+          Các công việc cần thực hiện
+        </div>
+        <!-- ====================================== -->
+        <!-- <div class="alert alert-success" role="alert"> </div> -->
+        <table class="list_task table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+        <!-- ====================================== -->
+        <div class="task__filtter d-flex justify-content-around">
+          <button type="button" class="btn btn-primary">Tất cả</button>
+          <button type="button" class="btn btn-success">Hoàn thành</button>
+          <button type="button" class="btn btn-warning">Đang thực hiện</button>
+        </div>
       </div>
-      <!-- ====================================== -->
-      <div class="alert alert-primary" role="alert">
-        Các công việc cần thực hiện
-      </div>
-      <!-- ====================================== -->
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>
-              <button type="button" class="btn btn-danger btn-sm">Delete</button>
+      <div class="app__view view__two" style="display: none">
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-4">
+                <label for="exampleInputEmail1">Hiển thị danh sách</label>
+              </div>
+              <div class="col-8">
+                <select name="list_task_show">
+                  <option value="all">Tất cả</option>
+                  <option value="completed">Hoàn thành</option>
+                  <option value="progress">Đang thực hiện</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-4">
+                <label for="exampleInputPassword1">Mầu nền</label>
+              </div>
+            </div>
+            <div class="col-8">
+              <input
+                type="color"
+                class="form-control"
+                name="background_color"
+                id="exampleInputPassword1"
+              />
+            </div>
+          </div>
 
-            </td>
-          </tr>
-          
-        </tbody>
-      </table>
-      <!-- ====================================== -->
-      <div class="task__filtter d-flex justify-content-around">
-        <button type="button" class="btn btn-primary">Tất cả</button>
-        <button type="button" class="btn btn-success">Hoàn thành</button>
-        <button type="button" class="btn btn-warning">Đang thực hiện</button>
+          <button type="button" name="btn-save" class="btn btn-primary">
+            Save
+          </button>
+        </form>
       </div>
     </div>
+
+ 
     <script src="./js/popup.js"></script>
   </body>
 </html>
