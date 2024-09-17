@@ -314,7 +314,7 @@ const questions = [
     },
     {
         question: "Theo Nghị định số 59/2023/NĐ-CP ngày 14/8/2023 của Chính phủ, số lượng thành viên Ban Giám sát đầu tư của cộng đồng là đại diện người dân trên địa bàn thôn, tổ dân phố nơi có chương trình, dự án do cơ quan nào quyết định?",
-        result: "Do Ban Thường trực Ủy ban Mặt trận Tổ quốc Việt Nam cấp xã quyết định từ 05 - 07 người."
+        result: "Do Ban Thường trực Ủy ban Mặt trận Tổ quốc Việt Nam cấp xã quyết định và có từ 05 đến 07 người."
     },
     {
         question: "Theo Luật Thực hiện dân chủ ở cơ sở, thời điểm công khai thông tin đối với những lĩnh vực mà pháp luật liên quan chưa có quy định là?",
@@ -348,16 +348,64 @@ const questions = [
         question: "Theo Nghị định số 61/2023/NĐ-CP ngày 16/8/2023 của Chính phủ, kinh phí thực hiện được quy định như thế nào?",
         result: "Tất cả các đáp án."
     },
-    {
-        question: "Theo Luật Thực hiện dân chủ ở cơ sở, người đứng đầu cơ quan, đơn vị có trách nhiệm như thế nào trong việc bảo đảm để cán bộ, công chức, viên chức, người lao động thực hiện việc kiểm tra, giám sát?",
-        result: "Thực hiện các biện pháp phòng ngừa, ngăn chặn hành vi tham nhũng, tiêu cực; xử lý và tạo điều kiện để cơ quan, tổ chức có thẩm quyền xử lý người có hành vi tham nhũng, tiêu cực; nếu thiếu trách nhiệm để xảy ra tham nhũng, tiêu cực trong cơ quan, đơn vị thì bị xử lý theo quy định của pháp luật."
-    },
+
     {
         question: "Cơ cấu, trách nhiệm của Ban Thanh tra nhân dân ở doanh nghiệp nhà nước được Luật Thực hiện dân chủ ở cơ sở quy định thế nào?",
-        result: "Gồm trưởng ban, phó ban và các ủy viên. Trưởng ban chịu trách nhiệm chung về HĐ của ban TTND, phó trưởng ban chịu trách nhiệm giúp TB..., các thành viên khác thực hiện nhiệm vụ theo sự phân công."
+        result: "Gồm Trưởng ban, Phó Trưởng ban và các Ủy viên. Trưởng ban chịu trách nhiệm chung về hoạt động của Ban Thanh tra nhân dân; Phó Trưởng ban có trách nhiệm giúp Trưởng ban thực hiện nhiệm vụ; các thành viên khác thực hiện nhiệm vụ theo sự phân công của Trưởng ban."
+    },
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, việc tổ chức hội nghị trao đổi, đối thoại giữa Ủy ban nhân dân cấp xã với Nhân dân được quy định như thế nào?",
+        result: "Tổ chức ít nhất 01 lần/năm."
+    },
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, nội dung có phạm vi thực hiện trong thôn, tổ dân phố, thì thời hạn để Ủy ban nhân dân cấp xã, Ủy ban Mặt trận Tổ quốc Việt Nam cấp xã phải ban hành quyết định công nhận là?",
+        result: "Chậm nhất là 05 ngày làm việc."
+    },
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, tiêu chuẩn nào dưới đây là tiêu chuẩn thành viên Ban Thanh tra nhân dân ở xã, phường, thị trấn?.",
+        result: "Tất cả các đáp án."
+    },
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, người đứng đầu cơ quan, đơn vị có trách nhiệm như thế nào trong việc bảo đảm để cán bộ, công chức, viên chức, người lao động thực hiện việc kiểm tra, giám sát?",
+        result: "Có trách nhiệm xử lý người có hành vi cản trở cán bộ, công chức, viên chức, người lao động thực hiện quyền kiểm tra, giám sát hoặc người có hành vi trả thù, trù dập người khiếu nại, tố cáo, kiến nghị, phản ánh theo quy định của pháp luật."
+    },
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, ngoài hình thức người lao động trực tiếp thực hiện việc kiểm tra, giám sát tại doanh nghiệp nhà nước thì pháp luật còn quy định hình thức nào khác?",
+        result: "Người lao động thực hiện việc kiểm tra, giám sát thông qua hoạt động của Ban Thanh tra nhân dân ở doanh nghiệp nhà nước."
+    },
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, việc thực hiện dân chủ ở doanh nghiệp, tổ chức khác có thuê mướn, sử dụng lao động theo hợp đồng lao động thuộc khu vực ngoài Nhà nước quy định như thế nào?",
+        result: "Tất cả đáp án."
+    },
+    {
+        question: "Theo Nghị định số 59/2023/NĐ-CP ngày 14/8/2023 của Chính phủ quy định Ban Thanh tra nhân dân thực hiện chế độ báo cáo được quy định như thế nào?",
+        result: "Ban Thanh tra nhân dân có trách nhiệm định kỳ báo cáo Ban Chấp hành Công đoàn ở cơ quan, đơn vị kết quả thực hiện nhiệm vụ quý, 06 tháng, năm, nhiệm kỳ hoặc khi có yêu cầu; báo cáo kết quả thực hiện nhiệm vụ hằng năm tại hội nghị cán bộ, công chức, viên chức người lao động của cơ quan, đơn vị."
+    },
+    {
+        question: "Theo Luật thực hiện dân chủ ở cơ sở, nội dung nào sau đây là một trong những nguyên tắc thực hiện dân chủ ở cơ sở?",
+        result: "Bảo đảm quyền của công dân, cán bộ, công chức, viên chức, người lao động được biết, tham gia ý kiến, quyết định và kiểm tra, giám sát việc thực hiện dân chủ ở cơ sở."
+    },
+    {
+        question: "Theo Nghị định số 59/2023/NĐ-CP ngày 14/8/2023 của Chính phủ, trường hợp nào dưới đây Trưởng thôn, Tổ trưởng tổ dân phố tổ chức phát phiếu lấy ý kiến của hộ gia đình để Nhân dân bàn và quyết định?",
+        result: "Tất cả các đáp án."
     }
-
-    
+    ,
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, đâu là trách nhiệm của Ủy ban Mặt trận Tổ quốc Việt Nam cấp xã trong việc tổ chức để Nhân dân bàn, quyết định và thực hiện quyết định của cộng đồng dân cư?",
+        result: "Hướng dẫn, giám sát việc tổ chức để Nhân dân bàn, quyết định và thực hiện các nội dung Nhân dân bàn, quyết định."
+    },
+    {
+        question: "Theo Nghị định số 59/2023/NĐ-CP ngày 14/8/2023 của Chính phủ, cá nhân nào dưới đây tham gia tổ bầu cử bầu Trưởng thôn, Tổ trưởng tổ dân phố?",
+        result: "Đại diện Ban công tác Mặt trận ở thôn, tổ dân phố."
+    },
+    {
+        question: "Theo Luật Thực hiện dân chủ ở cơ sở, nội dung nào sau đây là trách nhiệm Ban Chấp hành Công đoàn cơ quan, đơn vị trong việc bảo đảm hoạt động của Ban Thanh tra nhân dân ở cơ quan, đơn vị?",
+        result: "Hướng dẫn Ban Thanh tra nhân dân xây dựng chương trình, kể hoạch, nội dung công tác; xem xét báo cáo hoạt động của Ban Thanh tra nhân dân và hướng dẫn, chỉ đạo hoạt động của Ban Thanh tra nhân dân; tham gia hoạt động của Ban Thanh tra nhân dân khi xét thấy cần thiết."
+    },
+    {
+        question: "Theo Nghị định số 59/2023/NĐ-CP ngày 14/8/2023 của Chính phủ quy định Ban Thanh tra nhân dân ở cơ quan, đơn vị thực hiện chế độ báo cáo được quy định như thế nào?",
+        result: "Ban Thanh tra nhân dân có trách nhiệm định kỳ báo cáo Ban Chấp hành Công đoàn ở cơ quan, đơn vị kết quả thực hiện nhiệm vụ quý, 06 tháng, năm, nhiệm kỳ hoặc khi có yêu cầu; báo cáo kết quả thực hiện nhiệm vụ hằng năm tại hội nghị cán bộ, công chức, viên chức người lao động của cơ quan, đơn vị."
+    }
 ];
 
 function removeVietnameseTones(str) {
